@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Cart with tailwindcss</title>
+</head>
+
+<body>
+    <header class="sticky top-0 w-full z-50 flex p-2 px-10 justify-between ">
+
+        <div class="logo">
+            <i class="ri-menu-2-line text-2xl"></i>
+        </div>
+
+        <div class="cart_logo cursor-pointer">
+            <i class=" cursor-pointer ri-shopping-cart-fill text-2xl"></i>
+        </div>
+
+        <div class="cartt rounded-lg hidden absolute top-10 right-10 gap-5 w-fit h-fit bg-zinc-600 p-2">
+         <p>caet is empty</p>
+        </div>
+
+    </header>
+    <div class="main mt-5 ">
+        <div class=" scarch flex gap-3 justify-between  m-auto w-11/12">
+            <input type="text" placeholder="scarch " class="rounded-md px-5 bg-zinc-200 h-14  outline-none placeholder:text-slate-800 text-xl flex-1" >
+            <div class="setting cursor-pointer rounded-2xl bg-zinc-700 flex justify-center items-center">
+                <i class="text-cyan-50 px-4 text-2xl ri-list-settings-fill"></i>
+            </div>
+        </div>
+        <div class="catagories flex px-4 py-5 whitespace-nowrap overflow-auto w-full m-auto items-center  mt-5 gap-5 ">
+            <div class="cursor-pointer bg-slate-600 px-6 py-5 rounded-full shadow-lg shadow-slate-900" >
+                <i class="ri-home-3-fill text-yellow-400 text-xl "></i>
+            </div>
+            <div class="group relative cursor-pointer bg-white-200 px-5 py-4 rounded-full shadow-lg  hover:scale-[1.1] hover:bg-slate-600 ease-in duration-200 ">
+              <i class="ri-remixicon-line text-zinc-600 text-xl group-hover:text-yellow-400"></i>
+            </div>
+            <div class="group relative cursor-pointer bg-white-200 px-5 py-4 rounded-full shadow-lg  hover:scale-[1.1] hover:bg-slate-600 ease-in duration-200">
+                <i class="ri-store-line text-zinc-600 text-xl group-hover:text-yellow-400"></i>
+            </div>
+            <div class="group relative cursor-pointer bg-white-200 px-5 py-4 rounded-full shadow-lg  hover:scale-[1.1] hover:bg-slate-600 ease-in duration-200">
+                <i class="ri-save-fill text-zinc-600 text-xl group-hover:text-yellow-400"></i>
+            </div>
+            <div class="group relative cursor-pointer bg-white-200 px-5 py-4 rounded-full shadow-lg  hover:scale-[1.1] hover:bg-slate-600 ease-in duration-200">
+                <i class="ri-ie-fill text-zinc-600 text-xl group-hover:text-yellow-400"></i>
+            </div>
+            <div class="group relative cursor-pointer bg-white-200 px-5 py-4 rounded-full shadow-lg  hover:scale-[1.1] hover:bg-slate-600 ease-in duration-200">
+                <i class="ri-service-fill text-zinc-600 text-xl group-hover:text-yellow-400"></i>
+            </div>
+        </div>
+        <div class="products  w-full px-5 m-auto whitespace-nowrap overflow-auto flex gap-5 mt-5"> 
+        </div>
+        <div class="popular w-full   mt-6">
+            <h2 class=" px-5 capitalize text-xl font-extrabold">popular</h2>
+         <div class="popularcontainer px-5 w-full flex gap-5 mt-3 whitespace-nowrap overflow-auto">
+            
+     
+         </div>
+        </div>
+        <div class="popular mb-[9vh] w-full   mt-6">
+            <h2 class=" px-5 capitalize text-xl font-extrabold">popular</h2>
+         <div class="popularcontainer px-5 w-full flex gap-5 mt-3 whitespace-nowrap overflow-auto">
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="popularcontent bg-slate-100 rounded-lg w-fit pl-2 py-2 pr-10 flex items-center gap-4">
+                <div class="image w-[7rem] rounded-lg">
+                    <img class="w-full object-cover rounded-lg" src="https://plus.unsplash.com/premium_photo-1705433052991-8ebe1c81ce35?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="content">
+                    <div class="name capitalize  font-bold">
+                        <h3>beear ggjy</h3>
+                    </div>
+                    <div class="caragore  font-semibold text-ellipsis capitalize text-gray-400">
+                        <h3>
+                            new prodict
+                        </h3>
+                    </div>
+                    <div class= "price capitalize  font-bold">
+                        <h3>$123</h3>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div> 
+    </div>
+    <footer class=" px-4 h-[8vh] w-full bg-slate-200 fixed bottom-0 flex justify-between items-center mt-10">
+       <div class="flex gap-20">
+        <i class="ri-home-fill text-2xl text-slate-800 cursor-pointer"></i>
+        <i class="ri-heart-fill text-2xl  text-slate-400 cursor-pointer"></i>
+       </div>
+       <div class="bg-slate-900 px-6 py-5 rounded-full shadow-2xl shadow-black relative bottom-6 cursor-pointer">
+        <i class="ri-shopping-bag-fill text-yellow-300 text-xl "></i>
+       </div>
+       <div  class="flex gap-20">
+        <i class="ri-settings-fill text-2xl text-slate-400 cursor-pointer"></i>
+        <i class="ri-user-fill text-2xl text-slate-400 cursor-pointer"></i>
+    </div>
+    </footer>
+  
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
